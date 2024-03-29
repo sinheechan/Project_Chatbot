@@ -2,8 +2,10 @@ import numpy as np
 import pandas as pd
 import json
 
-# https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset # 장르, 무비아이디, 타이틀
-#pd.set_option('display.max_columns', None)
+# 데이터 불러오기 / 장르, 무비아이디, 타이틀
+# https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
+
+# pd.set_option('display.max_columns', None)
 meta = pd.read_csv('./movies_metadata.csv', low_memory=False)
 #meta.head()
 
@@ -16,9 +18,10 @@ ratings = pd.read_csv('./ratings_small.csv') # 평가데이터
 ratings = ratings[['userId', 'movieId', 'rating']]
 ratings.head()
 
-#ratings.describe()
+# ratings.describe()
 
 # 데이터 정제
+
 meta.movieId = pd.to_numeric(meta.movieId, errors='coerce')
 ratings.movieId = pd.to_numeric(ratings.movieId, errors='coerce')
 
