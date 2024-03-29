@@ -8,8 +8,8 @@ SentenceBERT jhgan/ko-sroberta-multitask
 웰니스 대화 스크립트 데이터셋
 
 # 사용된 라이브러리
-streamlit
-streamlit-chat
-pandas
-sentence-transformers
-scikit-learn
+- streamlit
+- streamlit-chat
+- pandas
+- sentence-transformers
+- scikit-learn
