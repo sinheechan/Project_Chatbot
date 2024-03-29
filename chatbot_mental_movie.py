@@ -20,22 +20,25 @@ def get_dataset():
 model = cached_model()
 df = get_dataset()
 
-st.header('심리상담 챗봇')
-st.markdown("[코리아 IT 아카데미], 이석창 강사)")
+st.header('심리상담 + 영화상담')
+st.markdown("[Chatbot], 신희찬)")
 
+# 대화한 내용 저장
 if 'generated' not in st.session_state:
-    st.session_state['generated'] = [] # 대화한 내용 저장
+    st.session_state['generated'] = []
 
+# 지난 대화 저장
 if 'past' not in st.session_state:
-    st.session_state['past'] = [] # 지난 대화 저장
+    st.session_state['past'] = []
 
-with st.form('form', clear_on_submit=True): # 사용자 입력 폼
+# 사용자 입력 폼
+with st.form('form', clear_on_submit=True):
     user_input = st.text_input('당신: ', '')
     submitted = st.form_submit_button('전송')
 
 if submitted and user_input:
     if user_input.startswith('/영화추천'):
-        tmp_input = user_input.split(maxsplit=1)  # split() 함수를 사용하여 입력 문자열을 공백을 기준으로 분할
+        tmp_input = user_input.split(maxsplit=1) # split() 함수를 사용하여 입력 문자열을 공백을 기준으로 분할
         if len(tmp_input) >= 2 and tmp_input[0] == '/영화추천' and tmp_input[1] is not None:
             res = recommend_movie(tmp_input[1])
             if res:
