@@ -1,13 +1,13 @@
-# mental-health-chatbot
-심리상담 정신건강 상담 챗봇. AI chatbot for psychology consultation.
+# Project_Chatbot
+심리상담 정신건강 상담 챗봇
 
-# Pretrained Model
+# 사전 훈련모델
 SentenceBERT jhgan/ko-sroberta-multitask
 
-# Dataset
+# 데이터셋
 웰니스 대화 스크립트 데이터셋
 
-# Dependency
+# 사용된 라이브러리
 streamlit
 streamlit-chat
 pandas
