@@ -16,8 +16,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # SentenceBERT 모델 로드
 
-** Bert(Bidirectional Encoder Representations from Transformers), 레이블이 지정된 작업에 대해 추가적인 미세 조정(fine-tuning)이 가능
- **
+
+**Bert(Bidirectional Encoder Representations from Transformers), 레이블이 지정된 작업에 대해 추가적인 미세 조정(fine-tuning)이 가능
+**
 
 
 
