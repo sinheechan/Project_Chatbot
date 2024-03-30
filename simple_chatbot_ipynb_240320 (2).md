@@ -18,6 +18,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 
+
 **Bert(Bidirectional Encoder Representations from Transformers), 레이블이 지정된 작업에 대해 추가적인 미세 조정(fine-tuning)이 가능
 **
 
