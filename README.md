@@ -16,4 +16,6 @@ SentenceBERT jhgan/ko-sroberta-multitask
 
 ## File explanation
 
-
+- Dataset 
+- mental_engineering.ipynb : 웰니스 대화 스크립트 데이터셋 기반 모델 생성  
+- 
