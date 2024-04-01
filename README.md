@@ -13,3 +13,7 @@ SentenceBERT jhgan/ko-sroberta-multitask
 - pandas
 - sentence-transformers
 - scikit-learn
+
+## File explanation
+
+
