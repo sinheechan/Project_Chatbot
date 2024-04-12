@@ -7,12 +7,14 @@ SentenceBERT jhgan/ko-sroberta-multitask
 ## Dataset
 웰니스 대화 스크립트 데이터셋
 
-## Libraries used
-- streamlit
-- streamlit-chat
-- pandas
-- sentence-transformers
-- scikit-learn
+## Libraries used & Version
+
+- pandas==2.1.1
+- numpy==1.23.0
+- streamlit==1.27.2
+- streamlit-chat==0.1.1
+- sentence-transformers==2.2.2
+- scikit-learn==1.3.1
 
 ## File explanation
 
