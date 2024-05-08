@@ -20,7 +20,7 @@ model = cached_model()
 df = get_dataset()
 
 st.header('심리상담 챗봇')
-st.markdown("[코리아 IT 아카데미], 이석창 강사)")
+st.markdown("신희찬의 심리상담소")
 
 # 대화한 내용 저장
 if 'generated' not in st.session_state:
